@@ -1,4 +1,3 @@
-![Python](https://img.shields.io/pypi/pyversions/price-parser.svg)
 =============
 binary_parser
 =============
@@ -23,7 +22,7 @@ The library provides the following common use cases.
 Converting a binary string to an integer
 ----------------------------------------
 
-```
+``
 >>> import binary_parser
 >>> binary_parser.parse_to_num('1011')
 '11'
@@ -31,12 +30,12 @@ Converting a binary string to an integer
 '0'
 >>> binary_parser.parse_to_num('01')
 '1'
-```
+``
 
 Converting an integer to its binary format
 ------------------------------------------
 Arguments passed can be a string or an integer type.
-```
+``
 >>> import binary_parser
 >>> binary_parser.parse_to_binary('7')
 '111'
@@ -44,12 +43,12 @@ Arguments passed can be a string or an integer type.
 '1'
 >>> binary_parser.parse_to_binary('0')
 '0'
-```
+``
 
 Checking if given string is binary or integer
 ---------------------------------------------
 
-```
+``
 >>> import binary_parser
 >>> binary_parser.which_parser('1010')
 'Input 1010 could be either binary or a number'
@@ -60,5 +59,5 @@ Checking if given string is binary or integer
 >>> binary_parser.which_parser('00101')
 'Input 00101 could be either binary or a number'
 'binary string: 00101 number: 101'
-```
+``
 
