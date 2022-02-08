@@ -20,6 +20,8 @@ class BinaryParsers:
     def numTobinary(input_string):
         """ Convert a number to its binary string """
         
+        if not input_string:
+            raise ValueError("Input must contain some integer")
         try:
             input_num = int(input_string)
         except:
@@ -41,7 +43,7 @@ class BinaryParsers:
         # binary check
         bin, num = 1, 1
         if not input_string:
-                bin = 0
+            raise ValueError("Input must contain some integer or some string")
 
         try:
             for char in input_string:
