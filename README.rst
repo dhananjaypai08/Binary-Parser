@@ -1,11 +1,11 @@
 =============
 binary_parser
 =============
-A python module where a number can be converted to it's binary bits and binary bits to number.
-**Note: binary bits which will be recieved and provided will be in string format for early releases.**
+A python module where a number can be converted to its binary string and binary string to number.
+**Note: binary string which will be recieved and provided will be in string format for early releases.**
 
 ``binary_parser``
-**is a simple python library where users can convert an integer to its bit string and vice versa.**
+**is a simple python library where users can convert an integer to its binary string and vice versa.**
 
 Installation
 ============

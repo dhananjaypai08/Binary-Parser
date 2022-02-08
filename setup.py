@@ -13,7 +13,7 @@ setup(
     name='binary_parser',
     version='0.0.2',
     description='convert integers to binary and vice-a-versa',
-    long_description=open('README.md', encoding="utf8").read() + '\n\n' + open('CHANGELOG.txt').read(),
+    long_description=open('README.rst', encoding="utf8").read() + '\n\n' + open('CHANGELOG.txt').read(),
     url='',
     author='Dhananjay Pai',
     author_email='dhananjay2002pai@gmail.com',
