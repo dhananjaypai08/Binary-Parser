@@ -1,18 +1,28 @@
 ![Python](https://img.shields.io/pypi/pyversions/price-parser.svg)
-### A python module where a number can be converted to it's binary bits and binary bits to number. ###
+=============
+binary_parser
+=============
+A python module where a number can be converted to it's binary bits and binary bits to number.
 **Note: binary bits which will be recieved and provided will be in string format for early releases.**
 
-`binary_parser` is a simple python library where users can convert an integer to its bit string and vice versa.
-***
-## Installation
-`pip install binary_parser`
+**``binary_parser`` is a simple python library where users can convert an integer to its bit string and vice versa.**
 
-binary_parser requires python 3.6+
+Installation
+============
+::
 
-## Usage
+    pip install number-parser
+
+number-parser requires Python 3.6+.
+
+
+Usage
+=====
 The library provides the following common use cases.
 
-### Converting a binary string to an integer
+Converting a binary string to an integer
+----------------------------------------
+
 ```
 >>> import binary_parser
 >>> binary_parser.parse_to_num('1011')
@@ -23,7 +33,8 @@ The library provides the following common use cases.
 '1'
 ```
 
-### Converting an integer to its binary format
+Converting an integer to its binary format
+------------------------------------------
 Arguments passed can be a string or an integer type.
 ```
 >>> import binary_parser
@@ -35,7 +46,9 @@ Arguments passed can be a string or an integer type.
 '0'
 ```
 
-### Checking if given string is binary or integer
+Checking if given string is binary or integer
+---------------------------------------------
+
 ```
 >>> import binary_parser
 >>> binary_parser.which_parser('1010')
@@ -48,5 +61,4 @@ Arguments passed can be a string or an integer type.
 'Input 00101 could be either binary or a number'
 'binary string: 00101 number: 101'
 ```
-***
 
