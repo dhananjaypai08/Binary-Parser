@@ -56,13 +56,13 @@ class BinaryParsers:
         except:
             num = 0
         if bin == 1 and num==1:
-            print(f"Input String {input_string} could be either binary or a number")
+            print(f"Input {input_string} could be either binary or a number")
             return f"binary string: {input_string} number: {input_num}"
         elif bin==1:
-            print(f"Input String {input_string} is a binary string")
+            print(f"Input {input_string} is a binary string")
             return f"binary string: {input_string}"
         elif num==1:
-            print(f"Input String {input_string} is a number")
+            print(f"Input {input_string} is a number")
             return f"number: {input_num}"
         else:
-            return f"Input String is neither binary nor a number"
+            return f"Input is neither binary nor a number"
