@@ -35,6 +35,34 @@ class BinaryParsers:
             input_num = input_num//2
         return ans[::-1]
     
-    def check_parsing(self, input_string):
+    def check_parsing(input_string):
         """ Check which conversion to apply for the given input string """
-        pass 
+
+        # binary check
+        bin, num = 1, 1
+        if not input_string:
+                bin = 0
+
+        try:
+            for char in input_string:
+                if char!='0' and char!='1':
+                    bin = 0
+        except:
+            bin = 0
+        
+        # integer check
+        try:
+            input_num = int(input_string)
+        except:
+            num = 0
+        if bin == 1 and num==1:
+            print(f"Input String {input_string} could be either binary or a number")
+            return f"binary string: {input_string} number: {input_num}"
+        elif bin==1:
+            print(f"Input String {input_string} is a binary string")
+            return f"binary string: {input_string}"
+        elif num==1:
+            print(f"Input String {input_string} is a number")
+            return f"number: {input_num}"
+        else:
+            return f"Input String is neither binary nor a number"
