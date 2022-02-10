@@ -11,7 +11,7 @@ Installation
 ============
 ::
 
-    pip install number-parser
+    pip install binary-parser
 
 number-parser requires Python 3.6+.
 
