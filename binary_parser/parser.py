@@ -35,7 +35,7 @@ class BinaryParsers:
             else:
                 ans += '0'
             input_num = input_num//2
-        return ans[::-1]
+        return ans[::-1].encode('utf-8')
     
     def check_parsing(input_string):
         """ Check which conversion to apply for the given input string """
@@ -46,17 +46,26 @@ class BinaryParsers:
             raise ValueError("Input must contain some integer or some string")
 
         try:
-            for char in input_string:
+            print(isinstance(input_string, bytes))
+            if isinstance(input_string, bytes):
+                input_string_enc = input_string.decode()
+            print(input_string)
+            for char in input_string_enc:
                 if char!='0' and char!='1':
                     bin = 0
+                    break
         except:
             bin = 0
         
         # integer check
         try:
-            input_num = int(input_string)
+            if isinstance(input_string, bytes):
+                num = 0
+            else:
+                input_num = int(input_string)
         except:
             num = 0
+
         if bin == 1 and num==1:
             print(f"Input {input_string} could be either binary or a number")
             return f"binary string: {input_string} number: {input_num}"

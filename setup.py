@@ -11,7 +11,7 @@ classifiers = [
 
 setup(
     name='binary_parser',
-    version='0.0.3',
+    version='0.0.4',
     description='convert integers to binary and vice-a-versa',
     long_description=open('README.rst', encoding="utf8").read() + '\n\n' + open('CHANGELOG.txt').read(),
     url='',

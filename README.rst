@@ -49,11 +49,13 @@ Checking if given string is binary or integer
 >>> import binary_parser
 >>> binary_parser.which_parser('1010')
 'Input 1010 could be either binary or a number'
-'binary string: 1010 number: 10'
+"binary string: 1010 number: 10"
 >>> binary_parser.which_parser(12)
 'Input 12 is a number'
-'number: 12'
+"number: 12"
 >>> binary_parser.which_parser('00101')
 'Input 00101 could be either binary or a number'
-'binary string: 00101 number: 101'
-
+"binary string: 00101 number: 101"
+>>> binary_parser.which_parser(b'10011')
+'Input b'10011' is a binary string'
+"binary string: b'10011'"
